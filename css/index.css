@@ -1,93 +1,91 @@
- * {
-     background-color: #14192cf6;
-     padding: 9px;
-     margin: 0px;
-     box-sizing: border-box;
-     /* font-family: 'Intr', sans-serif; */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
- }
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
 
- h1 {
-     color: yellow;
-     font-family: 'Intr', sans-serif;
-     text-align: center;
-     border-bottom: 2px solid black
- }
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
- .intro {
-     font-family: Arial, sans-serif;
-     font-size: 16px;
-     line-height: 1.5;
-     text-align: center;
-     margin: 50px auto;
-     max-width: 600px;
-     padding: 20px;
-     background-color: #643030;
-     border-radius: 10px;
-     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-     color: #CCCCCC;
- }
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
 
- .intro p {
-     margin-bottom: 10px;
+nav ul li a {
+    color: #646464;
+    text-decoration: none;
+}
 
- }
-
- .intro p:last-child {
-     margin-bottom: 0;
-     color: #CCCCCC;
- }
-
- h2 {
-     color: yellow;
-     position: static;
-     float: left;
-     margin-left: 200px;
-     margin-right: 10px;
-     background-color: #643030;
-     padding: 7px;
-     border-radius: 5px;
-
- }
-
- /* p {
-     color: #CCCCCC;
- } */
-
- .styled-list {
-     list-style-type: style;
-     padding: 80px;
-     text-align: center;
-     color: #CCCCCC;
- }
-
- .styled-list li {
-     display: inline-block;
-     width: 160px;
-     margin-right: 10px;
-     background-color: #643030;
-     padding: 7px;
-     border-radius: 5px;
- }
-
- .connect-styled-list {
-     list-style-type: style;
-     padding: 50px;
-     text-align: center;
- }
-
- .connect-styled-list li {
-     display: inline-block;
-     width: 180px;
- }
-
- a {
-     color: #CCCCCC;
+nav ul li a:hover {
+    color: #ccc;
+}
 
 
- }
+section {
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
 
- a:hover {
-     color: #a7b300;
+#experience,
+#skills,
+#about,
+#connect,
+#projects,
+#Name {
+    list-style-type: style;
+    padding: 40px;
+    text-align: center;
 
- }
+}
+
+#experience li,
+#skills li,
+#about li,
+#connect li,
+#projects li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 160px;
+    margin-right: 10px;
+    background-color: #f9f9f9;
+    padding: 7px;
+    border-radius: 5px;
+    color: #333;
+}
+
+
+#connect li a {
+    color: #373b3f;
+}
+
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    display: inline-block;
+    width: 40%;
+    margin-right: 10px;
+    background-color: #f9f9f9;
+    padding: 7px;
+    border-radius: 5px;
+    color: #333;
+}

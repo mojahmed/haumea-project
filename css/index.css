@@ -2,13 +2,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #333;
+    line-height: 1.5;
+    font-size: 16px;
 }
 
 header {
     background-color: #333;
-    color: #fff;
+    color: #ffffff;
     padding: 10px 0;
     text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: large;
+    margin-top: 30px;
+    padding: 0;
 }
 
 nav ul {
@@ -23,7 +30,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #646464;
+    color: #f8f8f8;
     text-decoration: none;
 }
 
@@ -34,46 +41,13 @@ nav ul li a:hover {
 
 section {
     padding: 20px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    margin: 15px;
+    /* width: 100%; */
     background-color: #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-#experience,
-#skills,
-#about,
-#connect,
-#projects,
-#Name {
-    list-style-type: style;
-    padding: 40px;
-    text-align: center;
-
-}
-
-#experience li,
-#skills li,
-#about li,
-#connect li,
-#projects li {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    width: 160px;
-    margin-right: 10px;
-    background-color: #f9f9f9;
-    padding: 7px;
-    border-radius: 5px;
-    color: #333;
-}
-
-
-#connect li a {
-    color: #373b3f;
-}
-
 
 p {
     font-family: Arial, sans-serif;
@@ -82,10 +56,151 @@ p {
     margin-bottom: 20px;
     padding-left: 30px;
     display: inline-block;
-    width: 40%;
-    margin-right: 10px;
+    width: 45%;
+    /* margin-right: 10px; */
     background-color: #f9f9f9;
     padding: 7px;
     border-radius: 5px;
     color: #333;
+}
+
+#Name,
+#experience,
+#skills,
+#about,
+#connect,
+#projects {
+
+    list-style-type: style;
+    margin: 16px;
+    text-align: center;
+    font-size: 20px;
+
+
+
+
+}
+
+/* .container {
+    width: 70%;
+    padding-left: 13em;
+
+} */
+
+/* #Name {
+    list-style-type: style;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 20px;
+
+} */
+
+#experience li,
+#skills li,
+#about li,
+#connect li,
+#projects li {
+    /* list-style-type: none; */
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 160px;
+    margin-right: 20px;
+    background-color: #f9f9f9;
+    /* padding: 7px; */
+    border-radius: 5px;
+    color: #333;
+}
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Style for each social icon item */
+.social-icons li {
+    margin: 0 10px;
+}
+
+/* Style for social icon links */
+.social-icons li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/* Style for social icon links on hover */
+.social-icons li a:hover {
+    color: #007bff;
+    /* Change color on hover */
+}
+
+
+
+@media (max-width: 768px) {
+
+    #about p,
+    #experience li,
+    #skills li,
+    #projects li,
+    #connect li {
+        background-color: lightblue;
+        color: navy;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        width: 70%;
+
+        margin-left: 10px;
+
+        margin: 10px auto;
+
+        padding: 10px;
+        border-radius: 5px;
+        width: 60%;
+    }
+
+    header {
+        margin-left: 20px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+
+    }
+
+    #about h2,
+    #experience h2,
+    #skills h2,
+    #projects h2,
+    #connect h2 {
+        text-align: justify;
+        font-size: 18px;
+
+    }
+
+    /* #skills li,
+    #connect li {
+        margin-left: 80px;
+    } */
+
+
 }

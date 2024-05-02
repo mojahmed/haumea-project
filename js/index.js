@@ -10,7 +10,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-
 // set the curetYear
 const today = new Date();
 const thisYear = today.getFullYear();
@@ -19,13 +18,12 @@ const footerContainer = document.getElementById('footer');
 const footerElement = document.createElement('footer');
 const copyright = document.createElement('p');
 
+// print the copyright string on the page using innerHTML
 copyright.innerHTML = `<small>Mohammed Ahmed &copy; ${thisYear}</small>`;
 
 // Append copyright inside footerElement
 footerElement.appendChild(copyright);
 footerContainer.appendChild(footerElement);
-
-
 
 
 // Skills section
@@ -46,7 +44,6 @@ for (let skill of skills) {
 //     listItem.textContent = item;
 //     skillList.appendChild(listItem);
 
-
 //     skillSection.appendChild(skillList);
 // });
 
@@ -61,11 +58,8 @@ items.forEach(item => {
     const listItem = document.createElement('li');
     listItem.textContent = item;
 
-
     listContainer.appendChild(listItem);
 });
-
-
 
 
 // Projects section 
@@ -82,8 +76,54 @@ projects.forEach(project => {
 });
 
 
+// form section 
+const messageForm = document.querySelector("form[name='leave_message']");
+messageForm.addEventListener('submit', function (event) {
+    event.preventDefault();
 
-// document.getElementById('skills').innerHTML = '<h2>Skills</h2><li>ABS</li><li>CSS</li><li>JavaScript</li><li>PHP</li>';
+    const userName = event.target.usersName.value;
+    const email = event.target.emails.value;
+    const userMessage = event.target.usersMessage.value;
+
+    console.log("Name:", userName);
+    console.log("email:", email);
+    console.log("Message:", userMessage);
+
+
+
+    event.target.reset();
+    // event.target.usersName.value = '';
+    // event.target.emails.value = '';
+    // event.target.usersMessage.value = '';
+
+
+    // display the message 
+    const messageSection = document.getElementById("messages");
+    const messageList = messageSection.querySelector("ul");
+    const newMessage = document.createElement('li');
+    newMessage.innerHTML = `<a href= 'mailto:${email}'>${userName}</a>  wrote this message: <span>${userMessage}</span>`;
+    messageList.appendChild(newMessage);
+
+    const removeButton = document.createElement('button');
+    removeButton.innerHTML = "remove";
+    removeButton.type = "button";
+    removeButton.classList.add("remove-button");
+
+    // adding eventlistener to the button 
+    removeButton.addEventListener('click', function (e) {
+        let entry = removeButton.parentNode;
+        entry.remove();
+
+    })
+    newMessage.appendChild(removeButton);
+    messageList.appendChild(newMessage);
+
+
+    console.log(removeButton);
+
+
+});
+
 
 
 

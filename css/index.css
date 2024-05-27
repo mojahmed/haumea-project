@@ -2,12 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #333;
+    background: #8C52FF;
     line-height: 1.5;
     font-size: 16px;
 }
 
+
 /* Reset default styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +20,7 @@ body {
 header {
     text-align: center;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
-    font-size: large;
+    font-size: larger;
     margin-top: 20px;
     padding: 0;
 }
@@ -30,7 +32,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #f8f8f8;
+    color: white;
     text-decoration: none;
 }
 
@@ -42,10 +44,23 @@ nav ul li a:hover {
 section {
     padding: 20px;
     margin: 15px;
-    background-color: #ccc;
+
+    /* background-color: #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    /* width: 80%; */
+}
+
+/* section {
+    padding: 20px;
+    margin: 15px auto;
+    /* set margin-top and margin-bottom to auto */
+/* background-color: #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+    width: 80%;
+} */
+*/
 
 /* Styling for headings within sections */
 #about h2,
@@ -53,7 +68,8 @@ section {
 #connect h2,
 #skill h2,
 #projects h2 {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+
 }
 
 
@@ -73,20 +89,61 @@ section {
 }
 
 /* Styling for list items */
+
 #experience li,
 #skill li,
 #about li,
-#connect li,
-#projects li {
-    margin: 0;
+#connect li {
+    /* margin: 0;
     padding: 0;
     display: inline-block;
     width: 160px;
     margin-right: 20px;
+    background-color: lightblue;
+    border-radius: 5px;
+    color: #333; */
+
+    background-color: #CAB8FF;
+    font-size: 18px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    border: 1px solid black;
+    display: block;
+}
+
+/* #projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-gap: 20px;
+}
+
+#projects li {
+    margin: 0;
+    padding: 0;
     background-color: #f9f9f9;
     border-radius: 5px;
     color: #333;
+} */
+#projects {
+
+    position: relative;
+
 }
+
+#projects li {
+    background-color: #CAB8FF;
+    font-size: 18px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    width: 50%;
+    border: 1px solid black;
+    display: block;
+}
+
+
 
 /* Styling for ABOUT paragraph */
 #about p {
@@ -95,9 +152,9 @@ section {
     line-height: 1.5;
     margin-bottom: 20px;
     display: inline-block;
-    width: 60%;
-    background-color: #f9f9f9;
-    padding: 7px;
+    width: 50%;
+    background-color: #CAB8FF;
+    padding: 30px;
     border-radius: 5px;
     color: #333;
 }
@@ -115,8 +172,15 @@ section {
 
 /* Style form container */
 form {
-    width: 300px;
+    background-color: #CAB8FF;
+    /* width: 500px; */
     margin: 0 auto;
+    font-size: 18px;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    /* width: 100%; */
+    border: 1px solid black;
 }
 
 /* Style labels */
@@ -129,7 +193,7 @@ label {
     border: 2px solid #333;
     padding: 20px;
     border-radius: 5px;
-    width: 400px;
+    width: 700px;
     margin: 0 auto;
 }
 
@@ -146,6 +210,7 @@ label {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
+    background-color: #F5F5F5;
 }
 
 /* form button  styling */
@@ -164,11 +229,11 @@ label {
 /* Styling for messages */
 #messages li {
     display: block;
-    background-color: #ffffff;
+    background-color: #CAB8FF;
     border-radius: 5px;
     color: #333;
     border: 1px solid black;
-    width: 70%;
+    width: 50%;
     margin: 10px auto;
     padding: 5px;
 }
@@ -188,15 +253,30 @@ label {
     background-color: #333;
 }
 
+.edit-button {
+    background-color: #ff0000;
+    color: #ffffff;
+    border: 2px solid #333;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.edit-button:hover {
+    background-color: #333;
+}
+
 /* Styling for footer section copyright */
 #footer p {
-    color: #333;
+    color: black;
 }
 
 /* Media queries for responsive design */
 @media (max-width: 768px) {
 
     /* Adjustments for smaller screens */
+
     #about p,
     #messages li,
     #Name h1,
@@ -212,10 +292,23 @@ label {
         border-radius: 5px;
         width: 100%;
         border: 1px solid black;
+        display: block;
+        color: #333;
+    }
+
+
+    #form_design {
+        font-size: 18px;
+        margin: 10px auto;
+        padding: 10px;
+        border-radius: 5px;
+        width: 100%;
+        border: 1px solid black;
+        display: block;
+        background-color: lightblue;
     }
 
     #messages h2,
-    #Name h1,
     #Leave_Message h2,
     #about h2,
     #experience h2,
@@ -223,5 +316,7 @@ label {
     #projects h2,
     #connect h2 {
         font-size: 20px;
+        color: #112A46;
     }
+
 }

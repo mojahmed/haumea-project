@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #333;
+    background: #8C52FF;
     line-height: 1.5;
     font-size: 16px;
 }
@@ -20,7 +20,7 @@ body {
 header {
     text-align: center;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
-    font-size: large;
+    font-size: larger;
     margin-top: 20px;
     padding: 0;
 }
@@ -32,7 +32,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #f8f8f8;
+    color: white;
     text-decoration: none;
 }
 
@@ -103,7 +103,7 @@ section {
     border-radius: 5px;
     color: #333; */
 
-    background-color: lightblue;
+    background-color: #CAB8FF;
     font-size: 18px;
     margin: 10px auto;
     padding: 10px;
@@ -133,7 +133,7 @@ section {
 }
 
 #projects li {
-    background-color: lightblue;
+    background-color: #CAB8FF;
     font-size: 18px;
     margin: 10px auto;
     padding: 10px;
@@ -153,7 +153,7 @@ section {
     margin-bottom: 20px;
     display: inline-block;
     width: 50%;
-    background-color: lightblue;
+    background-color: #CAB8FF;
     padding: 30px;
     border-radius: 5px;
     color: #333;
@@ -172,6 +172,7 @@ section {
 
 /* Style form container */
 form {
+    background-color: #CAB8FF;
     /* width: 500px; */
     margin: 0 auto;
     font-size: 18px;
@@ -209,7 +210,7 @@ label {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: lightblue;
+    background-color: #F5F5F5;
 }
 
 /* form button  styling */
@@ -228,7 +229,7 @@ label {
 /* Styling for messages */
 #messages li {
     display: block;
-    background-color: lightblue;
+    background-color: #CAB8FF;
     border-radius: 5px;
     color: #333;
     border: 1px solid black;
@@ -268,13 +269,14 @@ label {
 
 /* Styling for footer section copyright */
 #footer p {
-    color: wheat;
+    color: black;
 }
 
 /* Media queries for responsive design */
 @media (max-width: 768px) {
 
     /* Adjustments for smaller screens */
+
     #about p,
     #messages li,
     #Name h1,
@@ -294,6 +296,7 @@ label {
         color: #333;
     }
 
+
     #form_design {
         font-size: 18px;
         margin: 10px auto;
@@ -302,7 +305,7 @@ label {
         width: 100%;
         border: 1px solid black;
         display: block;
-        background-color: #045055;
+        background-color: lightblue;
     }
 
     #messages h2,
@@ -313,7 +316,7 @@ label {
     #projects h2,
     #connect h2 {
         font-size: 20px;
-        color: wheat;
+        color: #112A46;
     }
 
 }
